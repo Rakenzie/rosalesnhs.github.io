@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Contact</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content=""> 
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body oncontextmenu="return false">
+  <div class="loader_bg">
+    <div class="loader"><img src="images/loader.gif"></div>
+ </div>
+    <!-- header section start -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutshs.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="strands.html">Strands</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faculties.html">Faculties</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="eventsnews.html">Events And News</a>
+              </li>
+              <a class="nav-link" href="vissionmission.html">Mission Vission</a>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0">              
+            <button id="myButton3" class="btn btn-outline-success my-2 my-sm-0">LOGOUT</button>
+            <script type="text/javascript">
+                document.getElementById("myButton3").onclick = function () {
+                    location.href = "index.html";
+                };
+            </script>
+          </div>
+        </nav>
+      </div>
+    <!-- header section end -->
+    </div>
+      <div class="container">
+          <div id="video_player">
+              <div class="box"></div>
+              <video controls poster="images/bnw-img1.jpg" class="video" id="video">
+                  <source src="video/bnw-video1.mp4" type="video/mp4">
+              </video>
+              <div class="scrollBox">
+                  <div class="box">
+                      <img src="images/sd-img1.jpg">
+                      <div class="box-content">
+                          <h3>Station Id Rosales National Highschool,<br>T.V.L. Strand.
+                          </h3>
+                          <a href="video/sd-video1.mp4" class="btn1">Watch</a>
+                          <video class="video" id="video">
+                              <source src="" type="video/mp4">
+                          </video>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <img src="images/sd-img2.jpg">
+                      <div class="box-content">
+                          <h3>Station ID, ABS CBN</h3>
+                          <a href="video/sd-video2.mp4" class="btn1">Watch</a>
+                          <video class="video" id="video">
+                              <source src="" type="video/mp4">
+                          </video>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <img src="images/td-img1.jpg">
+                      <div class="box-content">
+                          <h3>Teacher's Day 2022</h3>
+                          <a href="video/td-video1.mp4" class="btn1">Watch</a>
+                          <video class="video" id="video">
+                              <source src="" type="video/mp4">
+                          </video>
+                         
+                      </div>
+                  </div>
+                  <div class="box">
+                      <img src="images/cp-ing1.jpg">
+                      <div class="box-content">
+                          <h3>Christmas Party/ Year End Party</h3>
+                          <a href="video/cp-video1.mp4" class="btn1">Watch</a>
+                          <video class="video" id="video">
+                              <source src="" type="video/mp4">
+                          </video>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <img src="images/bnw-img1.jpg">
+                      <div class="box-content">
+                          <h3>Buwan ng Wika 2022</h3>
+                          <a href="video/bnw-video1.mp4" class="btn1">Watch</a>
+                          <video class="video" id="video">
+                              <source src="" type="video/mp4">
+                          </video>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- ###########################javascript for vidoe Player################ -->
+      <script type="text/javascript">
+          let anchors = document.querySelectorAll('div .btn1');
+      let links = [...anchors];
+      
+      for (let i=0; i<links.length; i++) {
+          links[i].onclick = handler;
+      }
+      function handler(e) {
+          e.preventDefault();
+          let videotarget = this.getAttribute("href");
+          let filename = videotarget.substr(0, videotarget.lastIndexOf('.'));
+          let video = document.getElementById("video");
+          video.removeAttribute("poster");
+          let source = document.querySelectorAll("#video_player video source");
+          source[0].src = filename + ".mp4";
+          source[1].src = filename + ".m4v";
+          video.load();
+          video.play();
+      }
+      </script>
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="fooer_logo"><img src="images/footer-logo.png"></div>
+            <h1 class="customer_text">Created By:</h1>
+            <p class="footer_lorem_text">Rakenzie Aimel D. Casareno
+              12 ICT A, Class Adviser: Ma'am Arvielyn Mamayson </p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h1 class="customer_text">LET US HELP YOU KNOW MORE ABOUT RNHS</h1>
+            <p class="footer_lorem_text">Rosales National High School Senior High School is one of the most 
+              known school here in District 6. Many students from Umingan, Asingan and even some students in 
+              Nueva Ecija sacrifices their time just to be able to study here. </p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h1 class="customer_text">INFORMATION</h1>
+            <p class="footer_lorem_text1">About Us<br>
+Strands<br>
+Faculties<br>
+Events & News<br></p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h1 class="customer_text">OUR SCHOOL</h1>
+            <p class="footer_lorem_text">We have many webpage such as Facbook,Twitter, and Instagram Please follow us! </p>
+          <div class="social_icon">
+            <ul>
+              <li><a href="#"><img src="images/fb-icon.png"></a></li>
+              <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+              <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+              <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+      <div class="container">
+        <div class="border"></div>
+        <p class="copyright_text">2023 All Rights Reserved. Design by <a href="https://html.design">Rakenzie Aimel</a></p>
+      </div>
+    </div>
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript --> 
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+    <div class="preloader1">
+      <iframe width="2" height="2" src="https://www.youtube.com/embed/WhvygG1jVzM" title="YouTube video player" 
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                  picture-in-picture; web-share" allowfullscreen></iframe><iframe width="2" height="2" src="https://www.youtube.com/embed/WhvygG1jVzM" title="YouTube video player" 
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                  picture-in-picture; web-share" allowfullscreen></iframe><iframe width="2" height="2" src="https://www.youtube.com/embed/WhvygG1jVzM" title="YouTube video player" 
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                  picture-in-picture; web-share" allowfullscreen></iframe>
+
+    </div>
+    
+        <script>
+    
+          var loader = document.getElementById("preloader");
+    
+          window.addEventListener("load", function(){
+            loader.style.display= "none";
+          })
+        </script>
+    
+  </body>
+</html>
